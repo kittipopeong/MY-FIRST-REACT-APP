@@ -3,10 +3,7 @@ import classes from './Navbar.module.css'
 const Navbar = () => {
   return (
     <div className={classes.navbar}>
-      <a href="" className={classes.logo}>
-        {' '}
-        Navbar
-      </a>
+      <p className={classes.logo}> Navbar</p>
       <button className={classes.bottom}> Login</button>
     </div>
   )
