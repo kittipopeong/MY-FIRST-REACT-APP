@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Greeting name="Bun" />
+      <Greeting name="Kittipope" isLoggedIn={true} />
     </div>
   )
 }

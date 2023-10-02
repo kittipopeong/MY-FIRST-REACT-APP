@@ -2,12 +2,13 @@ import classes from './Greeting.module.css'
 
 interface IGreetingProps {
   name: string
+  isLoggedIn: boolean
 }
-const Greeting = ({ name }: IGreetingProps) => {
+const Greeting = ({ name, isLoggedIn }: IGreetingProps) => {
   return (
     <div className={classes.card}>
       <h3>welcome</h3>
-      <p>{name}</p>
+      <p>{isLoggedIn ? name : 'Unknown'}</p>
     </div>
   )
 }
