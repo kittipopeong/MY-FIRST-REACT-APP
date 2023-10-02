@@ -1,10 +1,13 @@
 import classes from './Greeting.module.css'
 
-const Greeting = () => {
+interface IGreetingProps {
+  name: string
+}
+const Greeting = ({ name }: IGreetingProps) => {
   return (
     <div className={classes.card}>
       <h3>welcome</h3>
-      <p>Kittipope</p>
+      <p>{name}</p>
     </div>
   )
 }
